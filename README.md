@@ -23,17 +23,7 @@
     <span class="pl-k">return</span> <span class="pl-s1">response</span>.<span class="pl-en">body</span>().<span class="pl-en">string</span>();
   }
 }</pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="OkHttpClient client = new OkHttpClient();
-
-String run(String url) throws IOException {
-  Request request = new Request.Builder()
-      .url(url)
-      .build();
-
-  try (Response response = client.newCall(request).execute()) {
-    return response.body().string();
-  }
-}" tabindex="0" role="button">
+  
       <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
     <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
 </svg>
@@ -58,20 +48,7 @@ String run(String url) throws IOException {
     <span class="pl-k">return</span> <span class="pl-s1">response</span>.<span class="pl-en">body</span>().<span class="pl-en">string</span>();
   }
 }</pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="public static final MediaType JSON = MediaType.get(&quot;application/json&quot;);
-
-OkHttpClient client = new OkHttpClient();
-
-String post(String url, String json) throws IOException {
-  RequestBody body = RequestBody.create(json, JSON);
-  Request request = new Request.Builder()
-      .url(url)
-      .post(body)
-      .build();
-  try (Response response = client.newCall(request).execute()) {
-    return response.body().string();
-  }
-}" tabindex="0" role="button">
+   
       <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
     <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
 </svg>
@@ -141,15 +118,7 @@ String post(String url, String json) throws IOException {
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OkHttp 包含一个用于测试 HTTP、HTTPS 和 HTTP/2 客户端的库。</font></font></p>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">最新版本可在</font></font><a href="https://search.maven.org/artifact/com.squareup.okhttp3/mockwebserver/4.12.0/jar" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Maven Central</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上获取。</font></font></p>
 <div class="highlight highlight-source-kotlin notranslate position-relative overflow-auto" dir="auto"><pre>testImplementation(<span class="pl-s"><span class="pl-pds">"</span>com.squareup.okhttp3:mockwebserver:4.12.0<span class="pl-pds">"</span></span>)</pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="testImplementation(&quot;com.squareup.okhttp3:mockwebserver:4.12.0&quot;)" tabindex="0" role="button">
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
-    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
-</svg>
-      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
-    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-</svg>
-    </clipboard-copy>
-  </div></div>
+   
 <h2 tabindex="-1" dir="auto"><a id="user-content-graalvm-native-image" class="anchor" aria-hidden="true" tabindex="-1" href="#graalvm-native-image"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GraalVM 原生镜像</font></font></h2>
 <p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://www.graalvm.org/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Graal https://www.graalvm.org/</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建原生镜像</font><font style="vertical-align: inherit;">应该会自动工作。</font><font style="vertical-align: inherit;">目前这还不是最终发布的版本，因此</font></font><code>5.0.0-alpha.2</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">应该使用。</font><font style="vertical-align: inherit;">请报告您发现的任何错误或解决方法。</font></font></p>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关示例构建，请参阅 okcurl 模块。</font></font></p>
